@@ -1,0 +1,380 @@
+body {
+    background-image: linear-gradient(to top right, #fcb045,
+            #e23b3b, #833ab4);
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+.maincontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid none;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    top: 80px;
+    left: 35%;
+    height: 600px;
+    width: 500px;
+
+
+}
+
+.firstheading {
+    position: absolute;
+    bottom: 500px;
+    text-transform: capitalize;
+    font-weight: 700;
+    left: 39%;
+
+
+}
+
+.detailsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    margin-top: 70px;
+
+}
+
+.detailsection .mail {
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+.mail::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.detailsection .pass {
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+}
+
+.pass::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.buttonsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    text-transform: capitalize;
+}
+
+.buttonsection .log {
+    padding: 15px 10px;
+    width: 350px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #3a86ff;
+    border: 1px solid white;
+
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+
+.separation {
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 20px;
+
+}
+
+.connect .facebook {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    white-space: nowrap;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s;
+
+
+
+}
+
+.logoname1 {
+    position: relative;
+    right: 100px;
+    text-transform: capitalize;
+
+}
+
+.connect .facebook:hover {
+    background-color: #023e8a;
+    color: white;
+}
+
+.connect .google {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    white-space: nowrap;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s;
+
+
+
+}
+
+.logoname2 {
+    position: relative;
+    right: 155px;
+    text-transform: capitalize;
+
+}
+
+.connect .google:hover {
+    background-color: #023e8a;
+    color: white;
+}
+
+.loader {
+    --background: linear-gradient(135deg, #23C4F8, #275EFE);
+    --shadow: rgba(39, 94, 254, 0.28);
+    --text: #6C7486;
+    --page: rgba(255, 255, 255, 0.36);
+    --page-fold: rgba(255, 255, 255, 0.52);
+    --duration: 3s;
+    width: 200px;
+    height: 140px;
+    position: relative;
+    top: 36%;
+    left: 43%;
+}
+
+.loader:before,
+.loader:after {
+    --r: -6deg;
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 120px;
+    top: 80%;
+    box-shadow: 0 16px 12px var(--shadow);
+    transform: rotate(var(--r));
+}
+
+.loader:before {
+    left: 4px;
+}
+
+.loader:after {
+    --r: 6deg;
+    right: 4px;
+}
+
+.loader div {
+    width: 100%;
+    height: 100%;
+    border-radius: 13px;
+    position: relative;
+    z-index: 1;
+    perspective: 600px;
+    box-shadow: 0 4px 6px var(--shadow);
+    background-image: var(--background);
+}
+
+.loader div ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.loader div ul li {
+    --r: 180deg;
+    --o: 0;
+    --c: var(--page);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform-origin: 100% 50%;
+    color: var(--c);
+    opacity: var(--o);
+    transform: rotateY(var(--r));
+    -webkit-animation: var(--duration) ease infinite;
+    animation: var(--duration) ease infinite;
+}
+
+.loader div ul li:nth-child(2) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-2;
+    animation-name: page-2;
+}
+
+.loader div ul li:nth-child(3) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-3;
+    animation-name: page-3;
+}
+
+.loader div ul li:nth-child(4) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-4;
+    animation-name: page-4;
+}
+
+.loader div ul li:nth-child(5) {
+    --c: var(--page-fold);
+    -webkit-animation-name: page-5;
+    animation-name: page-5;
+}
+
+.loader div ul li svg {
+    width: 90px;
+    height: 120px;
+    display: block;
+}
+
+.loader div ul li:first-child {
+    --r: 0deg;
+    --o: 1;
+}
+
+.loader div ul li:last-child {
+    --o: 1;
+}
+
+.loader span {
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--text);
+}
+
+@keyframes page-2 {
+    0% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    35%,
+    100% {
+        opacity: 0;
+    }
+
+    50%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes page-3 {
+    15% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+
+    65%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes page-4 {
+    30% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    65%,
+    100% {
+        opacity: 0;
+    }
+
+    80%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes page-5 {
+    45% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    80%,
+    100% {
+        opacity: 0;
+    }
+
+    95%,
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+#preloader {
+    background: white;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
